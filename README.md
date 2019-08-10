@@ -29,6 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Quellen
 
+* https://medium.com/@cyrilletuzi/how-to-build-and-publish-an-angular-module-7ad19c0b4464
 * https://appdividend.com/2018/12/09/how-to-create-angular-modules-to-organize-code/
 * https://www.softwarearchitekt.at/post/2019/01/27/building-angular-elements-with-the-cli.aspx
 * https://medium.com/codingthesmartway-com-blog/angular-elements-a-practical-introduction-to-web-components-with-angular-6-52c0b3076c2c
