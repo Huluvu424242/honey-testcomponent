@@ -1,0 +1,35 @@
+<div class="wrapper">
+  <header class="header">
+    <h1 id="titel">Präsentation</h1>
+  </header>
+
+
+  <nav title="Kopfzeilen Navigation" class="topnav">
+    <a *ngIf="this.isPresenting" (click)="prevSlide()">&lt;</a>
+    <a *ngIf="this.isPresenting" (click)="nextSlide()">&gt;</a>
+    <ng-container *ngFor="let slide of this.getSlides(); let i = index" [attr.data-index]="i">
+      <a (click)="gotoSlide(i)" class="{{this.getNavClass(i)}}">{{i}}</a>
+    </ng-container>
+  </nav>
+
+
+  <main class="row">
+
+
+    <div class="middle">
+      <div id="slide-frame">
+        <button id="start-praesentation" *ngIf="!this.isPresenting" (click)="updateView()">Start Präsentation</button>
+      </div>
+    </div>
+
+
+  </main>
+
+  <nav title="Fußzeilen Navigation" class="topnav">
+    <a *ngIf="this.isPresenting" (click)="prevSlide()">&lt;</a>
+    <a *ngIf="this.isPresenting" (click)="nextSlide()">&gt;</a>
+    <ng-container *ngFor="let slide of this.getSlides(); let i = index" [attr.data-index]="i">
+      <a (click)="gotoSlide(i)">{{i}}</a>
+    </ng-container>
+  </nav>
+</div>
